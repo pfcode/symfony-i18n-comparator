@@ -1,5 +1,5 @@
 # I18nComparatorBundle
-Utility for comparison of duplicated translation files in Symfony projects.
+Utility for making a comparison of duplicated translation files in Symfony projects.
 
 ### Use case
 The case this util resolves is very specific - it's intended to help find differences between 
@@ -79,4 +79,4 @@ This bundle registers a ComparatorFactory service and passes references to all k
 that your Symfony installation already does.
 
 ### License
-This project is published under the MIT license.
+This project is distributed under the MIT license.

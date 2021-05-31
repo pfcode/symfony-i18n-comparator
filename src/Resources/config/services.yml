@@ -1,0 +1,12 @@
+services:
+  pfcode_i18n_comparator_bundle.comparator.comparator_factory:
+    class: Pfcode\I18nComparatorBundle\Comparator\ComparatorFactory
+
+  pfcode_i18n_comparator_bundle.comparator.comparator:
+    class: Pfcode\I18nComparatorBundle\Comparator\Comparator
+
+  pfcode_i18n_comparator_bundle.command.find_conflicts_command:
+    class: Pfcode\I18nComparatorBundle\Command\FindConflictsCommand
+    arguments: ['@pfcode_i18n_comparator_bundle.comparator.comparator_factory']
+    tags:
+      - { name: console.command }
